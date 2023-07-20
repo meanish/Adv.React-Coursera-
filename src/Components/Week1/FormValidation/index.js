@@ -3,11 +3,16 @@ import { validateEmail } from "./Helper/utils";
 
 const PasswordErrorMessage = () => {
   return (
-    <p className="FieldError">Password should have at least 8 characters</p>
+    <p
+      className="FieldError"
+      style={{ color: "red", margin: 0, fontSize: "12px" }}
+    >
+      Password should have at least 8 characters
+    </p>
   );
 };
 
-function App() {
+function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -67,7 +72,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App question">
       <form onSubmit={handleSubmit}>
         <fieldset>
           <h2>Sign Up</h2>
@@ -132,4 +137,4 @@ function App() {
   );
 }
 
-export default App;
+export default Form;

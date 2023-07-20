@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+.Task {
+  display: flex;
+  flex-direction: column;
+  .Task1,
+  .Task2,
+  .Task3 {
+    border-bottom: 4px solid rgb(218, 243, 218);
+     box-shadow: 2px 03px 16px rgb(107, 106, 106);
+    margin-bottom: 2rem;
+    .head {
+      padding: 1rem 0;
+      font-weight: bolder;
+      font-size: 23px;
+      text-transform: capitalize;
+      text-align: center;
+      font-family: "Lugrasimo", cursive;
+      .quotation {
+        color: red;
+      }
+    }
+    .sub-head {
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      color: rgb(48, 143, 48);
+    }
+    .span {
+      font-size: 10px;
+      padding-right: 5px;
+      color: #000;
+    }
+  }
+  .question {
+    background-color: rgb(141, 144, 136);
+    color: white;
+  }
+  .answer {
+    background-color: rgb(232, 171, 105);
+  }
+}
+
+/* WeekOne */
+li {
+  color: rgb(87, 44, 128);
+  font-size: 15px;
+  padding: 3px;
+  font-weight: bolder;
+}
